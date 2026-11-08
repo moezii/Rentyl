@@ -1,0 +1,100 @@
+{
+  "name": "Rentyl - Car Rental Management Software",
+  "short_name": "Rentyl",
+  "description": "Comprehensive car rental management software with fleet tracking, booking management, and analytics",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "lang": "en-US",
+  "dir": "auto",
+  "icons": [
+    {
+      "src": "/src/assets/faviconmain.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/faviconmain.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshot-desktop.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Rentyl Dashboard - Desktop View"
+    },
+    {
+      "src": "/assets/screenshot-mobile.jpg",
+      "sizes": "360x640",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Rentyl Mobile App"
+    },
+    {
+      "src": "/assets/screenshot-tablet.jpg",
+      "sizes": "768x1024",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Rentyl Tablet Interface"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Quick access to fleet dashboard",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/src/assets/faviconmain.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Add Car",
+      "short_name": "Add Car",
+      "description": "Add new vehicle to fleet",
+      "url": "/cars/add",
+      "icons": [
+        {
+          "src": "/src/assets/faviconmain.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "short_name": "Analytics",
+      "description": "View fleet analytics",
+      "url": "/analytics",
+      "icons": [
+        {
+          "src": "/src/assets/faviconmain.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://rentyl.app"
+    }
+  ],
+  "prefer_related_applications": false
+}

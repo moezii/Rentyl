@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Import RTL support */
+@import './styles/rtl.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Emoji font support for better flag display */
+.emoji-font {
+  font-family:
+    'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', 'Android Emoji', 'EmojiSymbols',
+    'EmojiOne Mozilla', 'Twemoji Mozilla', 'Segoe UI Symbol', sans-serif;
+  font-feature-settings:
+    'liga' on,
+    'kern' on;
+  font-variant-emoji: emoji;
+}
+
+/* Ensure flags display properly */
+.flag-emoji {
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Override container to stretch to 90% width */
+.container {
+  max-width: 90% !important;
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Override Tailwind's max-w-7xl to use 90% width for logged-in pages */
+.max-w-7xl {
+  max-width: 90% !important;
+}
+
+/* Also override other max-width utilities used in authenticated pages */
+.max-w-4xl {
+  max-width: 90% !important;
+}
+
+.max-w-6xl {
+  max-width: 90% !important;
+}
+
+/* Override bg-gray-900 to very dark color for authenticated page containers */
+.bg-gray-900.mx-auto {
+  background-color: #0d1117 !important;
+}
+
+/* Ensure all main containers stretch to 80% width */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-transition {
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark .bg-white {
+  background-color: #000;
+}
+
+.dark .text-gray-800 {
+  color: #fff;
+}
+
+.dark .text-gray-700 {
+  color: #fff;
+}
+
+.dark .text-gray-600 {
+  color: #ddd;
+}
+
+.dark .bg-gray-50 {
+  background-color: #000;
+}
+
+.dark .bg-gray-100 {
+  background-color: #111;
+}
+
+.dark .bg-gray-200 {
+  background-color: #222;
+}
+
+/* Custom utility classes */
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary hover:text-white font-bold py-2 px-4 rounded-lg transition-all duration-300;
+  }
+
+  .input-field {
+    @apply border-2 border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white dark:bg-black rounded-lg shadow-lg p-6 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl dark:hover:bg-gray-900 transition-all duration-300;
+  }
+}
+
+/* Add keyframes for pulsing animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Custom scrollbar for terminal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* Firefox scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.3) rgba(0, 0, 0, 0.3);
+}

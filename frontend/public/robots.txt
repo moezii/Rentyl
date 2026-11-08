@@ -1,0 +1,107 @@
+# Robots.txt for Rentyl - Car Rental Management Software
+# https://rentyl.app
+
+# Default rule for all crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+Disallow: /login*
+Disallow: /signup*
+Disallow: /reset-password*
+Disallow: /user/*
+Disallow: /private/*
+Disallow: /*.json$
+Disallow: /*.log$
+Crawl-delay: 1
+
+# Major search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+Crawl-delay: 2
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Block AI training bots
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Block aggressive SEO crawlers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Mobile-specific crawlers
+User-agent: Googlebot-Mobile
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/*
+Disallow: /admin/*
+
+# PWA and mobile app crawlers
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://rentyl.app/sitemap.xml

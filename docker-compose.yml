@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  rentyl-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Frontend values are embedded in the JS bundle at build time (public, never secrets)
+        VITE_API_URL: /api
+        VITE_AMWAL_ENVIRONMENT: ${VITE_AMWAL_ENVIRONMENT}
+        VITE_EMAILJS_PUBLIC_KEY: ${VITE_EMAILJS_PUBLIC_KEY}
+        VITE_EMAILJS_SERVICE_ID: ${VITE_EMAILJS_SERVICE_ID}
+        VITE_EMAILJS_TEMPLATE_ID: ${VITE_EMAILJS_TEMPLATE_ID}
+        VITE_EMAILJS_CAREERS_TEMPLATE_ID: ${VITE_EMAILJS_CAREERS_TEMPLATE_ID}
+    image: rentyl-app:latest
+    container_name: rentyl_unified_app
+    ports:
+      - "10000:10000"
+    environment:
+      # Supabase
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - BUCKET_NAME=${BUCKET_NAME}
+      - BOOKING_DOCS_BUCKET=${BOOKING_DOCS_BUCKET}
+      - SIGNED_URL_TTL_SECONDS=${SIGNED_URL_TTL_SECONDS}
+      # Auth / encryption
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - CLIENT_ID_AES_KEY=${CLIENT_ID_AES_KEY}
+      - CLIENT_ID_AES_IV=${CLIENT_ID_AES_IV}
+      # AMWAL payment gateway
+      - AMWAL_MERCHANT_ID=${AMWAL_MERCHANT_ID}
+      - AMWAL_TERMINAL_ID=${AMWAL_TERMINAL_ID}
+      - AMWAL_SECURE_HASH_KEY=${AMWAL_SECURE_HASH_KEY}
+      - AMWAL_ENVIRONMENT=${AMWAL_ENVIRONMENT}
+      - FRONTEND_BASE_URL=${FRONTEND_BASE_URL}
+      - PAYMENT_TOKEN_SECRET=${PAYMENT_TOKEN_SECRET}
+      # Email (Resend)
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      - RESEND_FROM_EMAIL=${RESEND_FROM_EMAIL}
+      # Environment / CORS
+      - ENVIRONMENT=${ENVIRONMENT:-production}
+      - RENDER=${RENDER}
+      - CORS_ORIGINS=${CORS_ORIGINS}
+      - TRUSTED_PROXIES=${TRUSTED_PROXIES}
+    restart: unless-stopped

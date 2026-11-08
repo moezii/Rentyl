@@ -1,0 +1,267 @@
+/* Dark mode calendar styles */
+.calendar-container .rbc-calendar {
+  color: #ffffff;
+  overflow: visible;
+}
+
+/* Ensure the calendar container doesn't cut off events */
+.calendar-container {
+  overflow: visible !important;
+}
+
+.calendar-container .rbc-header {
+  background-color: #0b0f14;
+  border-color: #1f2937;
+  color: #e5e7eb;
+  padding: 16px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+
+.calendar-container .rbc-month-view {
+  background-color: #0f172a;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  overflow: visible !important;
+}
+
+.calendar-container .rbc-day-bg {
+  background-color: #0b0f14;
+  border-color: #1f2937;
+}
+
+.calendar-container .rbc-off-range-bg {
+  background-color: #0f172a;
+}
+
+.calendar-container .rbc-today {
+  background-color: transparent;
+}
+
+.calendar-container .rbc-date-cell {
+  color: #e5e7eb;
+  padding: 8px;
+  font-weight: 500;
+}
+
+.calendar-container .rbc-off-range {
+  color: #6b7280;
+}
+
+.calendar-container .rbc-event {
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 1px 0;
+}
+
+.calendar-container .rbc-event:focus {
+  outline: 2px solid #3b82f6;
+}
+
+/* Hide default toolbar as we use custom one */
+.calendar-container .rbc-toolbar {
+  display: none;
+}
+
+.calendar-container .rbc-agenda-view {
+  background-color: #0b0f14;
+  border: none;
+}
+
+.calendar-container .rbc-agenda-view table {
+  border-color: #1f2937;
+}
+
+.calendar-container .rbc-agenda-view table tbody > tr > td {
+  background-color: #0b0f14;
+  border-color: #1f2937;
+  color: #e5e7eb;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.calendar-container .rbc-agenda-view table thead > tr > th {
+  background-color: #0f172a;
+  border-color: #1f2937;
+  color: #9ca3af;
+  padding: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.calendar-container .rbc-agenda-date-cell,
+.calendar-container .rbc-agenda-time-cell {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.calendar-container .rbc-agenda-event-cell {
+  width: 100%;
+}
+
+.calendar-container .rbc-time-view {
+  background-color: #0b0f14;
+  border: none;
+}
+
+.calendar-container .rbc-time-header {
+  background-color: #0f172a;
+  border-color: #1f2937;
+}
+
+.calendar-container .rbc-time-content {
+  border-color: #1f2937;
+  border-top: 1px solid #1f2937;
+}
+
+.calendar-container .rbc-time-slot {
+  border-color: #1f2937;
+  color: #9ca3af;
+}
+
+.calendar-container .rbc-current-time-indicator {
+  background-color: #ef4444;
+  height: 2px;
+}
+
+/* Week view styles */
+.calendar-container .rbc-time-header-content {
+  border-color: #1f2937;
+}
+
+.calendar-container .rbc-timeslot-group {
+  border-color: #1f2937;
+}
+
+.calendar-container .rbc-time-gutter,
+.calendar-container .rbc-time-header-gutter {
+  background-color: #0b0f14;
+  border-color: #1f2937;
+  color: #9ca3af;
+}
+
+/* Event popup overlay */
+.calendar-container .rbc-overlay {
+  background-color: #0b0f14;
+  border: 1px solid #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 12px;
+  z-index: 100;
+}
+
+.calendar-container .rbc-overlay-header {
+  background-color: #0f172a;
+  border-bottom: 1px solid #1f2937;
+  color: #e5e7eb;
+  padding: 10px 12px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  margin: -12px -12px 12px -12px;
+}
+
+/* Fix event text overflow and truncation */
+.calendar-container .rbc-event-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 100%;
+  font-weight: 500;
+}
+
+/* Ensure events don't overlap text */
+.calendar-container .rbc-event-label {
+  font-size: 10px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+/* Better spacing for month view */
+.calendar-container .rbc-month-row {
+  min-height: 120px;
+  /* Increased height for better visibility */
+  overflow: visible;
+}
+
+/* Ensure day cells can expand to show all events */
+.calendar-container .rbc-day-slot {
+  overflow: visible !important;
+}
+
+/* Allow events container to overflow */
+.calendar-container .rbc-row-segment {
+  overflow: visible !important;
+}
+
+/* Ensure the event rows can expand */
+.calendar-container .rbc-row {
+  overflow: visible !important;
+}
+
+/* Allow the events layer to overflow */
+.calendar-container .rbc-row-content {
+  overflow: visible !important;
+}
+
+/* Fix date cell spacing */
+.calendar-container .rbc-date-cell {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Prevent event text from overflowing */
+.calendar-container .rbc-event {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 3px;
+  padding: 4px 8px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Force text truncation in events */
+.calendar-container .rbc-event > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Agenda view event truncation */
+.calendar-container .rbc-agenda-event-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+/* Completed rentals styling for agenda view */
+.calendar-container .rbc-agenda-view table tbody > tr.completed td {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* Week and day view event truncation */
+.calendar-container .rbc-time-slot .rbc-event {
+  overflow: hidden;
+}
+
+.calendar-container .rbc-time-slot .rbc-event-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+

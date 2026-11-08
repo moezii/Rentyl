@@ -1,0 +1,17 @@
+export default {
+  home: 'الرئيسية',
+  features: 'المميزات',
+  pricing: 'الأسعار',
+  book: 'احجز',
+  about: 'عنا',
+  contact: 'اتصل بنا',
+  login: 'تسجيل الدخول',
+  logout: 'تسجيل الخروج',
+  dashboard: 'لوحة التحكم',
+  cars: 'السيارات',
+  rentals: 'الإيجارات',
+  clients: 'العملاء',
+  calendar: 'التقويم',
+  maintenance: 'الصيانة',
+  analytics: 'التحليلات',
+};

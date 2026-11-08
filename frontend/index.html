@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/faviconmain.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Base SEO Meta Tags -->
+  <title>Rentyl – Effortless Car Rental Management</title>
+  <meta name="description"
+    content="Revolutionize your car rental business with Rentyl. Manage your fleet, automate bookings, and track maintenance, all on a secure, cloud-based platform." />
+  <meta name="keywords"
+    content="car rental management software, fleet management system, vehicle rental software, car rental platform, fleet tracking, rental business management" />
+  <meta name="author" content="Rentyl" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Theme and App Configuration -->
+  <meta name="theme-color" content="#3B82F6" />
+  <meta name="msapplication-TileColor" content="#3B82F6" />
+  <meta name="application-name" content="Rentyl" />
+  <meta name="apple-mobile-web-app-title" content="Rentyl" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- Open Graph Base Tags -->
+  <meta property="og:site_name" content="Rentyl" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card Base Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@rentyl" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//pay.google.com">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Preload Google Pay SDK to avoid CSP issues with Amwal iframe -->
+  <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+
+  <!-- Additional favicons for better browser support -->
+  <link rel="apple-touch-icon" href="/src/assets/faviconmain.png">
+  <link rel="shortcut icon" href="/src/assets/faviconmain.png">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- AMWAL Payment Gateway SmartBox.js -->
+  <!-- Script is loaded dynamically by loadSmartBox() based on environment -->
+  <!-- Do not hardcode the script here to avoid environment mismatches -->
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

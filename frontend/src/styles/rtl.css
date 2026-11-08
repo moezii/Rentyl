@@ -1,0 +1,403 @@
+/* RTL Support for Arabic Language */
+
+/* Base RTL styles */
+[dir='rtl'] {
+  text-align: right;
+}
+
+[dir='rtl'] body {
+  font-family:
+    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arabic UI Text', 'Geeza Pro',
+    'Traditional Arabic', serif;
+}
+
+/* Flexbox RTL adjustments */
+[dir='rtl'] .flex {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir='rtl'] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir='rtl'] .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir='rtl'] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir='rtl'] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir='rtl'] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/* Margin and padding adjustments */
+[dir='rtl'] .ml-1 {
+  margin-left: 0;
+  margin-right: 0.25rem;
+}
+[dir='rtl'] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+[dir='rtl'] .ml-3 {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+[dir='rtl'] .ml-4 {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+[dir='rtl'] .ml-6 {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+[dir='rtl'] .ml-8 {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+[dir='rtl'] .mr-1 {
+  margin-right: 0;
+  margin-left: 0.25rem;
+}
+[dir='rtl'] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+[dir='rtl'] .mr-3 {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+[dir='rtl'] .mr-4 {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+[dir='rtl'] .mr-6 {
+  margin-right: 0;
+  margin-left: 1.5rem;
+}
+[dir='rtl'] .mr-8 {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+[dir='rtl'] .pl-1 {
+  padding-left: 0;
+  padding-right: 0.25rem;
+}
+[dir='rtl'] .pl-2 {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+[dir='rtl'] .pl-3 {
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+[dir='rtl'] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+[dir='rtl'] .pl-6 {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+[dir='rtl'] .pl-8 {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+[dir='rtl'] .pr-1 {
+  padding-right: 0;
+  padding-left: 0.25rem;
+}
+[dir='rtl'] .pr-2 {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+[dir='rtl'] .pr-3 {
+  padding-right: 0;
+  padding-left: 0.75rem;
+}
+[dir='rtl'] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+[dir='rtl'] .pr-6 {
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+[dir='rtl'] .pr-8 {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+
+/* Text alignment */
+[dir='rtl'] .text-left {
+  text-align: right;
+}
+[dir='rtl'] .text-right {
+  text-align: left;
+}
+
+/* Border radius adjustments */
+[dir='rtl'] .rounded-l {
+  border-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+[dir='rtl'] .rounded-r {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+[dir='rtl'] .rounded-tl {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+}
+[dir='rtl'] .rounded-tr {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0.25rem;
+}
+[dir='rtl'] .rounded-bl {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.25rem;
+}
+[dir='rtl'] .rounded-br {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Transform adjustments for icons */
+[dir='rtl'] .transform.rotate-90 {
+  transform: rotate(-90deg);
+}
+[dir='rtl'] .transform.rotate-180 {
+  transform: rotate(180deg);
+}
+[dir='rtl'] .transform.-rotate-90 {
+  transform: rotate(90deg);
+}
+
+/* Dropdown positioning */
+[dir='rtl'] .absolute.right-0 {
+  right: auto;
+  left: 0;
+}
+[dir='rtl'] .absolute.left-0 {
+  left: auto;
+  right: 0;
+}
+
+/* Custom RTL utilities */
+.rtl-flip {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .rtl-flip {
+  transform: scaleX(1);
+}
+
+/* Arabic font improvements */
+[dir='rtl'] h1,
+[dir='rtl'] h2,
+[dir='rtl'] h3,
+[dir='rtl'] h4,
+[dir='rtl'] h5,
+[dir='rtl'] h6 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+[dir='rtl'] p,
+[dir='rtl'] span,
+[dir='rtl'] div {
+  line-height: 1.6;
+}
+
+/* Button and form adjustments */
+[dir='rtl'] button {
+  text-align: center;
+}
+
+[dir='rtl'] input,
+[dir='rtl'] textarea,
+[dir='rtl'] select {
+  text-align: right;
+}
+
+/* Navigation adjustments */
+[dir='rtl'] nav ul {
+  flex-direction: row-reverse;
+}
+
+/* Grid adjustments for RTL */
+[dir='rtl'] .grid {
+  direction: rtl;
+}
+
+/* Scrollbar adjustments */
+[dir='rtl'] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+[dir='rtl'] ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+[dir='rtl'] ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+[dir='rtl'] ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation adjustments */
+[dir='rtl'] .slide-in-right {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+[dir='rtl'] .slide-in-left {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Table adjustments */
+[dir='rtl'] table {
+  direction: rtl;
+}
+
+[dir='rtl'] th,
+[dir='rtl'] td {
+  text-align: right;
+}
+
+[dir='rtl'] th:first-child,
+[dir='rtl'] td:first-child {
+  text-align: right;
+}
+
+[dir='rtl'] th:last-child,
+[dir='rtl'] td:last-child {
+  text-align: left;
+}
+
+/* Modal and overlay adjustments */
+[dir='rtl'] .modal {
+  text-align: right;
+}
+
+/* Specific component adjustments */
+[dir='rtl'] .language-selector {
+  direction: rtl;
+}
+
+[dir='rtl'] .currency-selector {
+  direction: rtl;
+}
+
+/* Dashboard specific adjustments */
+[dir='rtl'] .dashboard-stats {
+  direction: rtl;
+}
+
+[dir='rtl'] .fleet-overview {
+  direction: rtl;
+}
+
+/* Card adjustments */
+[dir='rtl'] .card {
+  text-align: right;
+}
+
+[dir='rtl'] .card-header {
+  text-align: right;
+}
+
+[dir='rtl'] .card-body {
+  text-align: right;
+}
+
+/* Form specific adjustments */
+[dir='rtl'] .form-group label {
+  text-align: right;
+}
+
+[dir='rtl'] .form-control {
+  text-align: right;
+}
+
+/* Notification adjustments */
+[dir='rtl'] .notification {
+  text-align: right;
+}
+
+[dir='rtl'] .alert {
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  [dir='rtl'] .mobile-menu {
+    right: auto;
+    left: 0;
+  }
+
+  [dir='rtl'] .mobile-nav {
+    text-align: right;
+  }
+}
+
+/* Print adjustments */
+@media print {
+  [dir='rtl'] * {
+    direction: rtl;
+    text-align: right;
+  }
+}

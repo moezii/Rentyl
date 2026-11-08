@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://rentyl.app/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/features</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/features" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/features" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/about</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/about" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/contact</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/contact" />
+  </url>
+  
+  <!-- <url>
+    <loc>https://rentyl.app/pricing</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/pricing" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/pricing" />
+  </url> -->
+  
+  <!-- Arabic Language Pages -->
+  <url>
+    <loc>https://rentyl.app/ar/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ar/features</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/features" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/features" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ar/about</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/about" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ar/contact</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/contact" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/contact" />
+  </url>
+  
+  <!-- <url>
+    <loc>https://rentyl.app/ar/pricing</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/pricing" />
+  </url> -->
+  
+  <!-- Malay Language Pages -->
+  <url>
+    <loc>https://rentyl.app/ms/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ms/features</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/features" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ms/about</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/about" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/ms/contact</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/contact" />
+  </url>
+  
+  <!-- <url>
+    <loc>https://rentyl.app/ms/pricing</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/pricing" />
+  </url> -->
+  
+  <!-- Mobile App Pages -->
+  <url>
+    <loc>https://rentyl.app/mobile</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/mobile" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/mobile" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/mobile" />
+  </url>
+  
+  <url>
+    <loc>https://rentyl.app/app</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rentyl.app/app" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://rentyl.app/ar/app" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://rentyl.app/ms/app" />
+  </url>
+  
+  <!-- PWA Manifest -->
+  <url>
+    <loc>https://rentyl.app/manifest.json</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

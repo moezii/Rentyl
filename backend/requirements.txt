@@ -1,0 +1,17 @@
+# <0.155: routes/analytics.py passes `enum=` to Query(), which FastAPI 0.155 no longer accepts
+fastapi<0.155
+uvicorn
+supabase
+python-multipart
+python-dotenv
+pydantic[email]
+httpx
+PyJWT
+reportlab
+Pillow
+cryptography
+pikepdf
+resend
+arabic-reshaper
+python-bidi
+
